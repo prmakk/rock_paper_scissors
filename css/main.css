@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(18, 34, 56);
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.score {
+  border: 3px solid #fff;
+  border-radius: 20px;
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.score__info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.score__info h6 {
+  font-size: 12px;
+  font-weight: 300;
+}
+.score__count {
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.score__count h1 {
+  font-size: 24px;
+}
+.score__count p {
+  font-size: 36px;
+}
+
+.game__player {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.game__player img {
+  max-width: 100px;
+}
+.game__player-rock, .game__player-scissors, .game__player-paper {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  max-width: 205px;
+}
+.game__player-rock:hover, .game__player-scissors:hover, .game__player-paper:hover {
+  cursor: pointer;
+}
+.game__player-rock {
+  border: 10px solid rgb(77, 86, 207);
+  transition: 0.3s all ease;
+}
+.game__player-rock:hover {
+  border: 10px solid #313bb8;
+}
+.game__player-rock img {
+  transition: 0.3s all ease;
+}
+.game__player-rock img:hover {
+  scale: 1.1;
+}
+.game__player-scissors {
+  border: 10px solid rgb(241, 229, 117);
+  transition: 0.3s all ease-in-out;
+}
+.game__player-scissors:hover {
+  border: 10px solid #ecdc47;
+}
+.game__player-scissors img {
+  transition: 0.3s all ease;
+}
+.game__player-scissors img:hover {
+  scale: 1.1;
+}
+.game__player-paper {
+  border: 10px solid rgb(224, 85, 108);
+  transition: 0.3s all ease;
+}
+.game__player-paper:hover {
+  border: 10px solid #d82a47;
+}
+.game__player-paper img {
+  transition: 0.3s all ease;
+}
+.game__player-paper img:hover {
+  scale: 1.1;
+}
+
+.game__opponent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0px;
+  display: none;
+}
+.game__opponent-card {
+  border: 10px solid rgb(224, 85, 108);
+  transition: 0.3s all ease;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  max-width: 205px;
+}
+.game__opponent-card:hover {
+  border: 10px solid #d82a47;
+  cursor: pointer;
+}
+.game__opponent-card img {
+  transition: 0.3s all ease;
+  max-width: 100px;
+}
+.game__opponent-card img:hover {
+  scale: 1.1;
+}
+.game__opponent h1 {
+  color: #fff;
+  padding: 20px 0px;
+}/*# sourceMappingURL=main.css.map */
