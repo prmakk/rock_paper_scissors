@@ -9,6 +9,7 @@
 body{
     background-color: rgb(18, 34, 56);
     font-family: 'Open Sans', sans-serif;
+    overflow-y: hidden;
 }
 
 .container{
@@ -19,7 +20,7 @@ body{
 .score{
     border: 3px solid #fff;
     border-radius: 20px;
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -132,7 +133,7 @@ body{
     justify-content: center;
     flex-direction: column;
     padding: 50px 0px;
-    display: none;
+    //display: none;
 
     &-card{
         border: 10px solid rgb(224, 85, 108);
@@ -157,8 +158,53 @@ body{
         }
     }
 
-    h1{
+    .pc_rock{
+        display: none;
+    }
+    .pc_scissors{
+        display: none;
+    }
+    .pc_paper{
+        display: none;
+    }
+
+    h1, h2{
         color: #fff;
+        padding: 20px 0px;
+        display: none;
+    }
+    a{
+        display: none;
+        text-decoration: none;
+        color: #fff;
+        font-size: 22px;
+        padding: 20px 30px;
+        background-color: rgb(77, 182, 51);
+        border-radius: 20px;
+        transition: .4s all ease;
+
+        &:hover{
+            font-size: 24px;
+            letter-spacing: 2px;
+            background-color: darken(rgb(77, 182, 51), 5%);
+        }
+    }
+}
+
+//RESPONSIVE DESIGN
+@media (max-height: 940px){
+    body{
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width: 600px){
+    .game__player{
+        flex-direction: column;
+        padding: 20px 0px;
+        gap: 20px;
+    }
+    .game__opponent{
         padding: 20px 0px;
     }
 }

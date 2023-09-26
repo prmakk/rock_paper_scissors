@@ -7,6 +7,7 @@
 
     <!--LINKS-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/rock-paper-scissors.png" type="image/x-icon">
 
     <title>Rock Paper Scissors Game</title>
 </head>
@@ -22,7 +23,7 @@
             </div>
             <div class="score__count">
                 <h1>Score:</h1>
-                <p>0</p>
+                <p class="scoreTitle">0</p>
             </div>
         </div>
 
@@ -42,10 +43,18 @@
             </div>
             
             <div class="game__opponent">
-                <div class="game__opponent-card">
+                <h2 class="pc_chose"></h2>
+                <div class="game__opponent-card pc_rock">
+                    <img src="images/rock.png" alt="rock"/>
+                </div>
+                <div class="game__opponent-card pc_scissors">
                     <img src="images/scissors.png" alt="scissors"/>
                 </div>
-                <h1>PC win!</h1>
+                <div class="game__opponent-card pc_paper">
+                    <img src="images/paper-plane.png" alt="paper"/>
+                </div>
+                <h1 class="result">PC win!</h1>
+                <a href="#" class="new_game_btn">New game!</a>
             </div>
         </div>
     </div>
